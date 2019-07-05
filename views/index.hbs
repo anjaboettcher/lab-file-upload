@@ -1,0 +1,13 @@
+{{#each posts}}
+<img src="{{this.picPath}}">
+<span>{{this.content}}</span>
+<span>{{this.date}}</span>
+<span>{{this.creator}}</span>
+<hr>
+{{/each}}
+
+<form action="posts/:id/add-comment" method="post">
+Write your comment here: <input type="text" name="comment" value="">
+<br>
+<button>Add</button>
+</form>
